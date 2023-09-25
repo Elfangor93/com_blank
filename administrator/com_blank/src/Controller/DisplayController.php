@@ -70,12 +70,6 @@ class DisplayController extends BaseController
    */
   public function display($cachable = false, $urlparams = [])
   {
-    /*
-    * Set the template - this will display cpanel.php
-    * from the selected admin template.
-    */
-    $this->input->set('tmpl', 'default');
-
     return parent::display($cachable, $urlparams);
   }
 }

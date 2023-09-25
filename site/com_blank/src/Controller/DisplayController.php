@@ -28,7 +28,7 @@ class DisplayController extends BaseController
    * @var    string
    * @since  1.0.0
    */
-  protected $default_view = 'default';
+  protected $default_view = 'blank';
 
   /**
    * Elfangor93\Component\Blank\Administrator\Extension\BlankComponent
@@ -70,12 +70,6 @@ class DisplayController extends BaseController
    */
   public function display($cachable = false, $urlparams = [])
   {
-    /*
-    * Set the template - this will display cpanel.php
-    * from the selected admin template.
-    */
-    $this->input->set('tmpl', 'default');
-
     return parent::display($cachable, $urlparams);
   }
 }

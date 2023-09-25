@@ -14,7 +14,6 @@ namespace Elfangor93\Component\Blank\Administrator\View\Default;
 defined('_JEXEC') or die;
 
 use \Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
-use \Joomla\CMS\Toolbar\Toolbar;
 use \Joomla\CMS\Toolbar\ToolbarHelper;
 use \Joomla\CMS\Language\Text;
 use \Joomla\CMS\HTML\Helpers\Sidebar;
@@ -29,10 +28,13 @@ class HtmlView extends BaseHtmlView
 {
 	public function display($tpl = null)
 	{
-    ToolbarHelper::title(Text::_('COM_BLANK_DEFAULT_VIEW'), "wrench");
+    ToolbarHelper::title(Text::_('COM_BLANK'), "home");
 
 		$this->sidebar = Sidebar::render();
 		parent::display($tpl);
+
+    // Set page title
+    $this->document->setTitle(Text::_('COM_BLANK'));
 
     // Set sidebar action
 		Sidebar::setAction('index.php?option=com_blank&view=default');
