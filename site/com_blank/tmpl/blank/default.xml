@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="A Blank Page" option="default">
+	<layout title="COM_BLANK_BLANK_PAGE" option="default">
 		<message>
-			<![CDATA[Display Nothing!]]>
+			<![CDATA[COM_BLANK_BLANK_MENU_DESC]]>
 		</message>
 	</layout>
 </metadata>
