@@ -1,6 +1,11 @@
 <?php
 defined('_JEXEC') or die();
 
+use \Joomla\CMS\Language\Text;
+use \Joomla\CMS\Installer\InstallerScript;
+use \Joomla\CMS\Filesystem\File;
+use \Joomla\CMS\Filesystem\Folder;
+
 /**
  * Script file of Blank component.
  * 
