@@ -24,7 +24,6 @@
       <folder>language</folder>
       <folder>services</folder>
       <folder>src</folder>
-      <folder>tmpl</folder>
     </files>
 	</administration>
 </extension>
