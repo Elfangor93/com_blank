@@ -10,6 +10,8 @@
 	<description>COM_BLANK_XML_DESCRIPTION</description>
   <namespace path="src">Elfangor93\Component\Blank</namespace>
 
+  <scriptfile>script.php</scriptfile>
+
 	<files folder="site/com_blank">
 		<folder>language</folder>
     <folder>src</folder>
