@@ -2,7 +2,7 @@
 Joomla! component to create a menu item page that contains only modules and no component view.
 
 ## Credits
-This component is a reake of the Blank Component from <a href="https://omar84.com/downloads" target="_blank">Omar</a>. Many thanks!
+This component is a remake of the Blank Component from <a href="https://omar84.com/downloads" target="_blank">Omar</a>. Many thanks!
 
 ## Donate
 If you like this extension, donate a cup of tee or coffee to the developer, so that he may continue programming for you...
