@@ -20,9 +20,12 @@
 		<menu link="option=com_blank&amp;view=default">COM_BLANK</menu>
     <files folder="administrator/com_blank">
       <folder>language</folder>
-      <folder>services</folder>
       <folder>src</folder>
       <folder>tmpl</folder>
+      <filename>controller.php</filename>
+      <filename>blank.php</filename>
+      <filename>model.php</filename>
+      <filename>view.php</filename>
     </files>
 	</administration>
 </extension>
