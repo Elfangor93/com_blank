@@ -21,6 +21,6 @@ use \Joomla\CMS\Language\Text;
     <br />
     <h2><?php echo Text::_('COM_BLANK_BLANK_DONATE_TITLE'); ?></h2>
     <p><?php echo Text::_('COM_BLANK_BLANK_DONATE_DESC'); ?></p>
-    <a href="https://www.paypal.com/donate?token=GahxvB5gU5h6Ljwnz29vnQweZUwp9K_jGl2zeACnoC1l3SG_REGxVlC098zMpJ8izik7JVWCGcbT_Prg" class="btn btn-primary" target="_blank"><?php echo Text::_('COM_BLANK_BLANK_DONATE_BTN'); ?></a>
+    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C28HUM53S6EC2" class="btn btn-primary" target="_blank"><?php echo Text::_('COM_BLANK_BLANK_DONATE_BTN'); ?></a>
     <a href="https://github.com/Elfangor93/com_blank" class="btn btn-primary" target="_blank"><?php echo Text::_('COM_BLANK_BLANK_LINK_TO_GITHUB'); ?></a>
 </div>
