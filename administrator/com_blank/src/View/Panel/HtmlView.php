@@ -8,7 +8,7 @@
 **   @license    GNU General Public License version 3 or later            **
 ****************************************************************************/
 
-namespace Elfangor93\Component\Blank\Administrator\View\Default;
+namespace Elfangor93\Component\Blank\Administrator\View\Panel;
 
 // No direct access
 defined('_JEXEC') or die;

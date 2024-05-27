@@ -17,7 +17,7 @@
 	</files>
 
 	<administration>
-		<menu link="option=com_blank&amp;view=default">COM_BLANK</menu>
+		<menu link="option=com_blank&amp;view=panel">COM_BLANK</menu>
     <files folder="administrator/com_blank">
       <folder>language</folder>
       <folder>services</folder>

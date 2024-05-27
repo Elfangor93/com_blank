@@ -28,7 +28,7 @@ class DisplayController extends BaseController
    * @var    string
    * @since  1.0.0
    */
-  protected $default_view = 'default';
+  protected $default_view = 'panel';
 
   /**
    * Elfangor93\Component\Blank\Administrator\Extension\BlankComponent
