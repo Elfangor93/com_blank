@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="4.0" method="upgrade">
+<extension type="component" method="upgrade">
 	<name>com_blank</name>
 	<author>Manuel Häusler</author>
-  <authorUrl>www.tech.spuur.ch</authorUrl>
-  <creationDate>October 2023</creationDate>
-  <copyright>Copyright (C) 2023 Manuel Haeusler. All rights reserved.</copyright>
+  <authorUrl>https://tech.spuur.ch</authorUrl>
+  <creationDate>September 2024</creationDate>
+  <copyright>Copyright (C) 2024 Manuel Haeusler. All rights reserved.</copyright>
   <license>GNU General Public License version 3 or later</license>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>COM_BLANK_XML_DESCRIPTION</description>
   <namespace path="src">Elfangor93\Component\Blank</namespace>
+  <scriptfile>script.php</scriptfile>
 
 	<files folder="site/com_blank">
 		<folder>language</folder>
@@ -25,4 +26,8 @@
       <folder>tmpl</folder>
     </files>
 	</administration>
+
+  <updateservers>
+    <server type="extension" name="Blank Component" priority="1">https://updates.spuur.ch/com_blank.xml</server>
+  </updateservers>
 </extension>
