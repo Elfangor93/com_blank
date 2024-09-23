@@ -6,7 +6,7 @@
   <creationDate>September 2024</creationDate>
   <copyright>Copyright (C) 2024 Manuel Haeusler. All rights reserved.</copyright>
   <license>GNU General Public License version 3 or later</license>
-	<version>1.1.0</version>
+	<version>2.0.0</version>
 	<description>COM_BLANK_XML_DESCRIPTION</description>
   <namespace path="src">Elfangor93\Component\Blank</namespace>
   <scriptfile>script.php</scriptfile>
