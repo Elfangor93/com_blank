@@ -1,10 +1,10 @@
 <?php
 /**
 ****************************************************************************
-**   @version    1.0.0                                                    **
+**   @version    2.0.0                                                    **
 **   @package    com_blank                                                **
 **   @author     Manuel Häusler <tech.spuur@quickline.ch>                 **
-**   @copyright  2023 Manuel Haeusler                                     **
+**   @copyright  2024 Manuel Haeusler                                     **
 **   @license    GNU General Public License version 3 or later            **
 ****************************************************************************/
 
@@ -37,6 +37,6 @@ class HtmlView extends BaseHtmlView
     $this->document->setTitle(Text::_('COM_BLANK'));
 
     // Set sidebar action
-		Sidebar::setAction('index.php?option=com_blank&view=default');
+		Sidebar::setAction('index.php?option=com_blank&view=panel');
 	}
 }
