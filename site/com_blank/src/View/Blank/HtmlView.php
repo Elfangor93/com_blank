@@ -1,10 +1,10 @@
 <?php
 /**
 ****************************************************************************
-**   @version    2.0.0                                                    **
+**   @version    2.1.0                                                    **
 **   @package    com_blank                                                **
 **   @author     Manuel Häusler <tech.spuur@quickline.ch>                 **
-**   @copyright  2024 Manuel Haeusler                                     **
+**   @copyright  2026 Manuel Haeusler                                     **
 **   @license    GNU General Public License version 3 or later            **
 ****************************************************************************/
 
@@ -48,12 +48,13 @@ class HtmlView extends BaseHtmlView
 	 */
 	public function display($tpl = null)
 	{
-    $this->state  = $this->get('State');
-    $this->params = $this->get('Params');
-
     $app   = Factory::getApplication();
 		$menu  = $app->getMenu()->getActive();
+    $model = $this->getModel();
 		$title = null;
+    
+    $this->state  = $model->getState();
+    $this->params = $model->getParams();
 
     // Page heading
     if($menu)
@@ -71,20 +72,20 @@ class HtmlView extends BaseHtmlView
 		{
 			$title = Text::_('COM_BLANK_BLANK_PAGE');
 		}
-    $this->document->setTitle($title);
+    $this->getDocument()->setTitle($title);
 
     // HTML meta data
 		if($this->params['menu']->get('menu-meta_description'))
 		{
-			$this->document->setDescription($this->params['menu']->get('menu-meta_description'));
+			$this->getDocument()->setDescription($this->params['menu']->get('menu-meta_description'));
 		}
 		if($this->params['menu']->get('menu-meta_keywords'))
 		{
-			$this->document->setMetadata('keywords', $this->params['menu']->get('menu-meta_keywords'));
+			$this->getDocument()->setMetadata('keywords', $this->params['menu']->get('menu-meta_keywords'));
 		}
 		if($this->params['menu']->get('robots'))
 		{
-			$this->document->setMetadata('robots', $this->params['menu']->get('robots'));
+			$this->getDocument()->setMetadata('robots', $this->params['menu']->get('robots'));
 		}
 	}
 }

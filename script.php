@@ -1,10 +1,10 @@
 <?php
 /**
 ****************************************************************************
-**   @version    2.0.0                                                    **
+**   @version    2.1.0                                                    **
 **   @package    com_blank                                                **
 **   @author     Manuel Häusler <tech.spuur@quickline.ch>                 **
-**   @copyright  2024 Manuel Haeusler                                     **
+**   @copyright  2026 Manuel Haeusler                                     **
 **   @license    GNU General Public License version 3 or later            **
 ****************************************************************************/
 
@@ -29,8 +29,8 @@ return new class () implements ServiceProviderInterface
         private AdministratorApplication $app;
         private DatabaseInterface $db;
 
-        private string $minimumJoomla = '4.0.0';
-        private string $minimumPhp    = '7.4.0';
+        private string $minimumJoomla = '4.4.0';
+        private string $minimumPhp    = '8.0.0';
         private string $extension     = 'com_blank';
 
         public function __construct(AdministratorApplication $app, DatabaseInterface $db)

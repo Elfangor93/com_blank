@@ -1,10 +1,10 @@
 <?php
 /**
 ****************************************************************************
-**   @version    2.0.0                                                    **
+**   @version    2.1.0                                                    **
 **   @package    com_blank                                                **
 **   @author     Manuel Häusler <tech.spuur@quickline.ch>                 **
-**   @copyright  2024 Manuel Haeusler                                     **
+**   @copyright  2026 Manuel Haeusler                                     **
 **   @license    GNU General Public License version 3 or later            **
 ****************************************************************************/
 
@@ -34,7 +34,7 @@ class HtmlView extends BaseHtmlView
 		parent::display($tpl);
 
     // Set page title
-    $this->document->setTitle(Text::_('COM_BLANK'));
+    $this->getDocument()->setTitle(Text::_('COM_BLANK'));
 
     // Set sidebar action
 		Sidebar::setAction('index.php?option=com_blank&view=panel');

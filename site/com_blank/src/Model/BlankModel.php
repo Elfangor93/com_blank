@@ -1,10 +1,10 @@
 <?php
 /**
 ****************************************************************************
-**   @version    2.0.0                                                    **
+**   @version    2.1.0                                                    **
 **   @package    com_blank                                                **
 **   @author     Manuel Häusler <tech.spuur@quickline.ch>                 **
-**   @copyright  2024 Manuel Haeusler                                     **
+**   @copyright  2026 Manuel Haeusler                                     **
 **   @license    GNU General Public License version 3 or later            **
 ****************************************************************************/
 
@@ -54,7 +54,7 @@ class BlankModel extends BaseDatabaseModel
   {
     parent::__construct($config, $factory);
 
-    $this->app       = Factory::getApplication('site');
+    $this->app       = Factory::getApplication();
     $this->component = $this->app->bootComponent('com_blank');
   }
 
@@ -66,9 +66,9 @@ class BlankModel extends BaseDatabaseModel
 	 */
 	public function getParams(): array
 	{
-		$params = array('component' => $this->getState('parameters.component'),
-										'menu'      => $this->getState('parameters.menu')
-									 );
+		$params = ['component' => $this->getState('parameters.component'),
+								'menu'     => $this->getState('parameters.menu')
+              ];
 
 		return $params;
 	}	
@@ -82,12 +82,16 @@ class BlankModel extends BaseDatabaseModel
 	 *
 	 * @since   1.0.0
 	 *
-	 * @throws Exception
+	 * @throws \Exception
 	 */
 	protected function populateState()
 	{
     // Load the parameters.
-    $params = Factory::getApplication('com_blank')->getParams();
+    $params = Factory::getApplication()->getParams('com_blank');
     $this->setState('parameters.component', $params);
+
+    // Load manu parameters
+    $menu = Factory::getApplication()->getMenu()->getActive();
+    $this->setState('parameters.menu', $menu->getParams());
   }
 }
